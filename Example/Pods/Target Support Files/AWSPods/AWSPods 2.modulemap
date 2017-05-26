@@ -1,0 +1,6 @@
+framework module AWSPods {
+  umbrella header "AWSPods-umbrella.h"
+
+  export *
+  module * { export * }
+}

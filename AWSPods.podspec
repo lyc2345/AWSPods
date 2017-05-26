@@ -29,8 +29,6 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'AWSPods/Classes/**/*'
   
   # s.resource_bundles = {
   #   'AWSPods' => ['AWSPods/Assets/*.png']
@@ -39,4 +37,17 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+
+  s.resource_bundles        = { 'AWSUtiles' => [ 'AWSPods/**/*.{png,storyboard,lproj}' ] }
+  #s.source_files            = 'AWSPods/Classes/**/*', '*.framework/headers/*.h'
+  s.source_files            = 'AWSPods/Classes/**/*'
+
+  s.ios.dependency 'AWSCognito'
+  s.ios.dependency 'AWSCognitoIdentityProvider'
+  s.ios.dependency 'AWSDynamoDB'
+  s.ios.dependency 'AWSCore'
+  s.ios.dependency 'DS'
+  s.ios.dependency 'AFNetworking', '~> 3.0'
+  s.ios.dependency 'SAMKeychain'
+
 end
