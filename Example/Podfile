@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'AWSPods_Example' do
+  pod 'AWSPods', :path => '../'
+
+  target 'AWSPods_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+  pod 'Expecta'
+  end
+end
