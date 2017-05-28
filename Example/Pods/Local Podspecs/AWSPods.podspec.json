@@ -18,25 +18,28 @@
   "platforms": {
     "ios": "8.0"
   },
-  "resource_bundles": {
-    "AWSUtiles": [
-      "AWSPods/**/*.{png,storyboard,lproj}"
-    ]
-  },
-  "source_files": "AWSPods/Classes/**/*",
   "ios": {
+    "resource_bundles": {
+      "Resources": [
+        "AWSPods/**/*.{png,storyboard,lproj}"
+      ]
+    },
+    "source_files": "AWSPods/Classes/**/*.{h,m}",
+    "vendored_frameworks": [
+      "AWSPods/Frameworks/AWSMobileHubHelper.framework"
+    ],
     "dependencies": {
       "AWSCognito": [
-
+        "~> 2.5.7"
       ],
       "AWSCognitoIdentityProvider": [
-
+        "~> 2.5.7"
       ],
       "AWSDynamoDB": [
-
+        "~> 2.5.7"
       ],
       "AWSCore": [
-
+        "~> 2.5.7"
       ],
       "DS": [
 

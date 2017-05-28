@@ -10,6 +10,10 @@
 #endif
 #endif
 
+#import "AWSConfiguration.h"
+#import "AWSMobileClient.h"
+#import "NoSQLModelHelpers.h"
+#import "NoSQLSampleDataGenerator.h"
 #import "Alert.h"
 #import "DSWrapper.h"
 #import "Encrypt.h"

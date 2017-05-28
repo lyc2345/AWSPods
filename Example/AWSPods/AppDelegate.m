@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import <AFNetworking/AFNetworking.h>
-#import <AWSPods/Random.h>
+@import AFNetworking;
+@import AWSPods;
 
 @implementation AppDelegate
 
@@ -17,6 +17,9 @@
   NSLog(@"Network reachable: %s", [AFNetworkReachabilityManager sharedManager].isReachable == YES ? "YES" : "NO");
   
   NSLog(@"random: %@", [Random string]);
+  
+  NSLog(@"AWSclient: %@", [AWSMobileClient sharedInstance]);
+  
   
   return YES;
 }

@@ -23,10 +23,10 @@ PODS:
     - AWSCore (= 2.5.7)
   - AWSPods (0.1.0):
     - AFNetworking (~> 3.0)
-    - AWSCognito
-    - AWSCognitoIdentityProvider
-    - AWSCore
-    - AWSDynamoDB
+    - AWSCognito (~> 2.5.7)
+    - AWSCognitoIdentityProvider (~> 2.5.7)
+    - AWSCore (~> 2.5.7)
+    - AWSDynamoDB (~> 2.5.7)
     - DS
     - SAMKeychain
   - DS (0.1.0)
@@ -49,7 +49,7 @@ SPEC CHECKSUMS:
   AWSCognitoIdentityProvider: 7b2ac768763bab6ea57830482267447c792f3358
   AWSCore: 716d787cde0239b3e92f9b4151c052f55a117703
   AWSDynamoDB: cd1dc9e938924c65d2af942fdcf560a96724f34d
-  AWSPods: 6bdd9a97235170793f5820513d9fd15a7ac172f5
+  AWSPods: 1c7b770e1f1550eb4fc685b5587b7b1f515f98a5
   DS: 37808426a8f5472680ef65bebaa02df6925fb8a1
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   SAMKeychain: 1865333198217411f35327e8da61b43de79b635b

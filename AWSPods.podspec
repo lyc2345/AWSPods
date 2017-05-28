@@ -28,8 +28,25 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/lyc2345/AWSPods.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-  
+  s.ios.deployment_target = '8.0' 
+
+  s.ios.resource_bundles        = { 'Resources' => [ 'AWSPods/**/*.{png,storyboard,lproj}' ] }
+
+  s.ios.source_files            = 'AWSPods/Classes/**/*.{h,m}'
+  s.ios.vendored_frameworks = ['AWSPods/Frameworks/AWSMobileHubHelper.framework']
+  #s.ios.libraries = 'sqlite3.tbd', 'z.tbd'
+
+  s.ios.dependency 'AWSCognito', '~> 2.5.7'
+  s.ios.dependency 'AWSCognitoIdentityProvider', '~> 2.5.7'
+  s.ios.dependency 'AWSDynamoDB', '~> 2.5.7'
+  s.ios.dependency 'AWSCore', '~> 2.5.7'
+  s.ios.dependency 'DS'
+  s.ios.dependency 'AFNetworking', '~> 3.0'
+  s.ios.dependency 'SAMKeychain'
+
+end
+
+
   # s.resource_bundles = {
   #   'AWSPods' => ['AWSPods/Assets/*.png']
   # }
@@ -38,16 +55,8 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 
-  s.resource_bundles        = { 'AWSUtiles' => [ 'AWSPods/**/*.{png,storyboard,lproj}' ] }
-  #s.source_files            = 'AWSPods/Classes/**/*', '*.framework/headers/*.h'
-  s.source_files            = 'AWSPods/Classes/**/*'
+  #s.xcconfig = { 'OTHER_LDFLAGS' => '-framework AWSMobileHubHelper' }
+  #s.ios.vendored_frameworks = '*.framework'
+  #
+  #s.user_target_xcconfig =   {'OTHER_LDFLAGS' => ['-lObjC','-all_load']}
 
-  s.ios.dependency 'AWSCognito'
-  s.ios.dependency 'AWSCognitoIdentityProvider'
-  s.ios.dependency 'AWSDynamoDB'
-  s.ios.dependency 'AWSCore'
-  s.ios.dependency 'DS'
-  s.ios.dependency 'AFNetworking', '~> 3.0'
-  s.ios.dependency 'SAMKeychain'
-
-end
