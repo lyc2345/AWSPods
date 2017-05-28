@@ -17,6 +17,7 @@
 #import "Bookmark.h"
 #import "RecentVisit.h"
 #import "RecordSuitable.h"
+#import "AWSPods.h"
 #import "Alert.h"
 #import "DSWrapper.h"
 #import "Encrypt.h"
