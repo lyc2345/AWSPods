@@ -21,7 +21,7 @@ PODS:
   - AWSCore (2.5.7)
   - AWSDynamoDB (2.5.7):
     - AWSCore (= 2.5.7)
-  - AWSPods (0.1.0):
+  - AWSPods (0.1.1):
     - AFNetworking (~> 3.0)
     - AWSCognito (~> 2.5.7)
     - AWSCognitoIdentityProvider (~> 2.5.7)
@@ -41,7 +41,7 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   AWSPods:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -49,7 +49,7 @@ SPEC CHECKSUMS:
   AWSCognitoIdentityProvider: 7b2ac768763bab6ea57830482267447c792f3358
   AWSCore: 716d787cde0239b3e92f9b4151c052f55a117703
   AWSDynamoDB: cd1dc9e938924c65d2af942fdcf560a96724f34d
-  AWSPods: 1c7b770e1f1550eb4fc685b5587b7b1f515f98a5
+  AWSPods: fcb2f666d6919a277bcb8ff87a92ebe01976f8fc
   DS: 37808426a8f5472680ef65bebaa02df6925fb8a1
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   SAMKeychain: 1865333198217411f35327e8da61b43de79b635b

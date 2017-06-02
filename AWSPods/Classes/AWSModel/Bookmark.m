@@ -13,7 +13,6 @@
 
 
 #import "Bookmark.h"
-@import AWSMobileHubHelper;
 #import "NoSQLSampleDataGenerator.h"
 #import <sys/utsname.h>
 

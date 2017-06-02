@@ -11,7 +11,7 @@
 //
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <AWSCore/AWSCore.h>
+@import AWSCore;
 
 @interface AWSMobileClient : NSObject
 
