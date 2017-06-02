@@ -28,13 +28,14 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/lyc2345/AWSPods.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0' 
-
-  s.ios.resource_bundles        = { 'Resources' => [ 'AWSPods/**/*.{png,storyboard,lproj}' ] }
-
-  s.ios.source_files            = 'AWSPods/Classes/**/*.{h,m}'
-  s.ios.vendored_frameworks = ['AWSPods/Frameworks/AWSMobileHubHelper.framework']
-  #s.ios.libraries = 'sqlite3.tbd', 'z.tbd'
+  s.ios.deployment_target   = '8.0'
+  s.platform                = :ios, '8.0'
+  s.requires_arc            = true
+  s.ios.resource_bundles    = {
+    'Resources' => ['AWSPods/**/*.{png,storyboard,lproj}']
+  }
+  s.ios.source_files        = 'AWSPods/Classes/**/*'
+  #s.ios.libraries          = 'sqlite3.tbd', 'z.tbd'
 
   s.ios.dependency 'AWSCognito', '~> 2.5.7'
   s.ios.dependency 'AWSCognitoIdentityProvider', '~> 2.5.7'
@@ -43,6 +44,8 @@ TODO: Add long description of the pod here.
   s.ios.dependency 'DS'
   s.ios.dependency 'AFNetworking', '~> 3.0'
   s.ios.dependency 'SAMKeychain'
+
+  s.vendored_frameworks = 'AWSPods/*.{framework}'
 
 end
 
